@@ -1,1 +1,96 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic reset */
+        body {
+            margin: 0;
+            font-family: "Roboto Light", sans-serif;
+        }
+
+        /* Header styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1F2937;
+            color: white;
+            padding: 10px 20px; /* Padding inside the header */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for a slight 3D effect */
+        }
+
+        /* Space around the logo */
+        .header-logo {
+            color: #F9FAF8;
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 170px; /* Space between logo and left edge */
+        }
+
+        /* Space around the links container */
+        .header-links {
+            display: flex;
+            gap: 15px; /* Space between links */
+            margin-right: 200px; /* Space between links and right edge */
+        }
+
+        .header-links a {
+            color: #E5E7EB;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease; /* Smooth color transition on hover */
+        }
+
+        .header-links a:hover {
+            color: white; /* Change color on hover */
+        }
+
+        /* Container styles */
+        .container {
+            display: grid;
+            grid-template-columns: 300px 900px;
+            grid-template-rows: 100px 100px 500px 100px;
+            gap: 15px;
+            text-align: center;
+            height: 100%;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+
+        .blurb {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+    <title>Dream Tracker</title>
+</head>
+<body>
+<!-- Header section -->
+<div class="header">
+    <div class="header-logo">Header Logo</div>
+    <div class="header-links">
+        <a href="#fantasies">Header Link 1</a>
+        <a href="#nightmares">Header Link 2</a>
+        <a href="#limbo">Header Link 3</a>
+    </div>
+</div>
+
+<!-- Main content -->
+<div class="container">
+    <div class="blurb">The Website is Awesome</div>
+    <div id="blurb-words">This website has some subtext that goes under the main title. It's a smaller font and the color is lower text.</div>
+    <button>Sign Up</button>
+    <img src="random_photo.jpg" alt="Random Photo">
+</div>
+
+<!-- Additional content -->
+<div>
+    <div id="subtext">Some random Text</div>
+    <img src="rando-photo.jpg" alt="Rando Photo">
+    <div id="texter">This is some subtext under an illusion or image</div>
+</div>
+</body>
+</html>
