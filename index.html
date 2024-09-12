@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Tracker</title>
     <style>
         /* Basic reset */
         body {
             margin: 0;
             font-family: "Roboto Light", sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the body covers the full viewport height */
         }
 
         /* Header styles */
@@ -15,7 +19,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #1F2937;
+            background-color: #1F2937; /* Same background color */
             color: white;
             padding: 10px 20px; /* Padding inside the header */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for a slight 3D effect */
@@ -47,25 +51,89 @@
             color: white; /* Change color on hover */
         }
 
-        /* Container styles */
-        .container {
-            display: grid;
-            grid-template-columns: 300px 900px;
-            grid-template-rows: 100px 100px 500px 100px;
-            gap: 15px;
-            text-align: center;
-            height: 100%;
-            padding: 16px;
+        /* Main content */
+        .main {
+            background-color: #1F2937; /* Same background color */
+            color: #F9FAF8; /* Adjust text color if needed */
+            height: 25vh; /* Takes up 1/5 of the viewport height */
+            padding: 20px; /* Optional: Add some padding */
+            align-items: center;
             box-sizing: border-box;
         }
+        .second {
+            background-color: white;
+            height: 25vh; /* Takes up 1/5 of the viewport height */
+
+        }
+        .third {
+            background-color: #E5E7EB;
+            height: 25vh; /* Takes up 1/5 of the viewport height */
+
+        }
+        .fourth {
+            background-color: white;
+            height: 25vh; /* Takes up 1/5 of the viewport height */
+
+        }
+
+        .quote{
+            font-size:36px;
+            color: #1F293F;
+        }
+
+        .sub-quote{
+            color:#E5E7EB;
+        }
+        .subtext
+        {
+            color:black;
+        }
+        .subbertext
+        {
+
+        }
+
 
         .blurb {
-            background-color: blue;
+            color: #F9FAF8;
+            font-size: 48px;
+            font-weight: 900;
+        }
+
+        button {
+            background-color: #007bff;
             color: white;
-            padding: 10px;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+
+        /* Footer styles */
+        .footer {
+            background-color: #1F2937; /* Same background color */
+            color: white;
+            padding: 10px 20px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for a slight 3D effect */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Add space between the copyright symbol and the text */
+        .footer::before {
+            content: "© "; /* Adds the copyright symbol */
+            font-size: 18px; /* Adjust font size as needed */
         }
     </style>
-    <title>Dream Tracker</title>
 </head>
 <body>
 <!-- Header section -->
@@ -79,18 +147,34 @@
 </div>
 
 <!-- Main content -->
-<div class="container">
-    <div class="blurb">The Website is Awesome</div>
+<div class="main">
+    <div class="blurb">This website is awesome</div>
     <div id="blurb-words">This website has some subtext that goes under the main title. It's a smaller font and the color is lower text.</div>
     <button>Sign Up</button>
     <img src="random_photo.jpg" alt="Random Photo">
 </div>
 
 <!-- Additional content -->
-<div>
-    <div id="subtext">Some random Text</div>
+<div class ="second">
+    <div class="subtext">Some random information</div>
     <img src="rando-photo.jpg" alt="Rando Photo">
-    <div id="texter">This is some subtext under an illusion or image</div>
+    <div class="subbertext">This is some subtext under an illusion or image</div>
+</div>
+
+<div class ="third">
+    <div class = "quote">This is an inspiring quote, or testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</div>
+    <div class = "sub-quote">-Thor, God of Thunder</div>
+</div>
+
+
+<div class = "fourth">
+
+</div>
+
+
+<!-- Footer section -->
+<div class="footer">
+    Copyright The Odin Project 2021
 </div>
 </body>
 </html>
