@@ -3,141 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Dream Tracker</title>
-    <style>
-        /* Basic reset */
-        body {
-            margin: 0;
-            font-family: "Roboto Light", sans-serif;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Ensures the body covers the full viewport height */
-        }
-
-        /* Header styles */
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #1F2937; /* Same background color */
-            color: white;
-            padding: 10px 20px; /* Padding inside the header */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for a slight 3D effect */
-        }
-
-        /* Space around the logo */
-        .header-logo {
-            color: #F9FAF8;
-            font-size: 24px;
-            font-weight: bold;
-            margin-left: 170px; /* Space between logo and left edge */
-        }
-
-        /* Space around the links container */
-        .header-links {
-            display: flex;
-            gap: 15px; /* Space between links */
-            margin-right: 200px; /* Space between links and right edge */
-        }
-
-        .header-links a {
-            color: #E5E7EB;
-            text-decoration: none;
-            font-size: 18px;
-            transition: color 0.3s ease; /* Smooth color transition on hover */
-        }
-
-        .header-links a:hover {
-            color: white; /* Change color on hover */
-        }
-
-        /* Main content */
-        .main {
-            background-color: #1F2937; /* Same background color */
-            color: #F9FAF8; /* Adjust text color if needed */
-            height: 25vh; /* Takes up 1/5 of the viewport height */
-            padding: 20px; /* Optional: Add some padding */
-            align-items: center;
-            box-sizing: border-box;
-        }
-        .second {
-            background-color: white;
-            height: 25vh; /* Takes up 1/5 of the viewport height */
-
-        }
-        .third {
-            background-color: #E5E7EB;
-            height: 25vh; /* Takes up 1/5 of the viewport height */
-
-        }
-        .fourth {
-            background-color: white;
-            height: 25vh; /* Takes up 1/5 of the viewport height */
-
-        }
-
-        .quote{
-            font-size:36px;
-            color: #1F293F;
-        }
-
-        .sub-quote{
-            color:#E5E7EB;
-        }
-        .subtext
-        {
-            color:black;
-        }
-        .subbertext
-        {
-            color:#E5E7EB;
-
-        }
-
-
-        .blurb {
-            color: #F9FAF8;
-            font-size: 48px;
-            font-weight: 900;
-        }
-
-        button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-
-        /* Footer styles */
-        .footer {
-            background-color: #1F2937; /* Same background color */
-            color: white;
-            padding: 10px 20px;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for a slight 3D effect */
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Add space between the copyright symbol and the text */
-        .footer::before {
-            content: "© "; /* Adds the copyright symbol */
-            font-size: 18px; /* Adjust font size as needed */
-        }
-    </style>
 </head>
 <body>
-<!-- Header section -->
+
 <div class="header">
     <div class="header-logo">Header Logo</div>
     <div class="header-links">
@@ -148,28 +18,67 @@
 </div>
 
 <!-- Main content -->
+<!-- Main content -->
 <div class="main">
-    <div class="blurb">This website is awesome</div>
-    <div id="blurb-words">This website has some subtext that goes under the main title. It's a smaller font and the color is lower text.</div>
-    <button>Sign Up</button>
-    <img src="random_photo.jpg" alt="Random Photo">
+    <div class="content">
+        <div class="blurb">Grey Square Project</div>
+        <div id="blurb-words">This website has some subtext that goes under the main title.</div>
+        <div id="blurbby">It's a smaller font and the color is lower text.</div>
+
+        <button class = "button">Sign Up</button>
+    </div>
+    <img src="https://via.placeholder.com/300x200" alt="Random Rectangle" class="random-image">
 </div>
 
 <!-- Additional content -->
-<div class ="second">
+<div class="second">
     <div class="subtext">Some random information</div>
-    <img src="rando-photo.jpg" alt="Rando Photo">
-    <div class="subbertext">This is some subtext under an illusion or image</div>
+    <div class="squares-container">
+        <div class="square-container">
+            <div class="square"></div>
+            <div class="caption">This is some subtext under the image</div>
+        </div>
+        <div class="square-container">
+            <div class="square"></div>
+            <div class="caption">This is some subtext under the image</div>
+        </div>
+        <div class="square-container">
+            <div class="square"></div>
+            <div class="caption">This is some subtext under the image</div>
+        </div>
+        <div class="square-container">
+            <div class="square"></div>
+            <div class="caption">This is some subtext under the image</div>
+        </div>
+    </div>
+</div>
+
+
+<!--    <div class="subbertext">This is some subtext under an illusion or image</div>-->
 </div>
 
 <div class ="third">
-    <div class = "quote">This is an inspiring quote, or testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</div>
-    <div class = "sub-quote">-Thor, God of Thunder</div>
+    <div class = "quote-container">
+        <div class = "quote">You really wanted to be able to bring the signature to be sitting right below the quote. So when the day comes that you do, you will have learned much more than what you've learned by now</div>
+        <div class = "sub-quote">-Doofus, God of Thunder</div>
+    </div>
 </div>
 
 
-<div class = "fourth">
-
+<div class="fourth">
+    <div class="bluebox">
+        <div class="text-container">
+            <div class="innerbox">
+                Call to Action!
+            </div>
+            <div class="secbox">
+                Sign up for our product by clicking the button right here!
+            </div>
+        </div>
+        <div class="signup">
+            <button class="sup">Sign Up</button>
+        </div>
+    </div>
 </div>
 
 
